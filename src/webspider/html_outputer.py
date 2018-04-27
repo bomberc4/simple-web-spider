@@ -18,6 +18,9 @@ class HtmlOutputer(object):
     def output_html(self):
         fout = open('output.html', 'w',encoding='utf-8')
         fout.write("<html>")
+        fout.write("<head>")
+        fout.write("<meta charset='utf-8'>")
+        fout.write("<head>")
         fout.write("<body>")
         fout.write("<table>")
         
